@@ -2,8 +2,8 @@
 
 ## 결과
 
-<img width="48%" height="800px" alt="image" src="https://github.com/ingbinsee/button-component/assets/140426866/2497c924-0bde-430a-af16-3678c7bd4862">
-<img width="48%" height="800px" alt="image" src="https://github.com/ingbinsee/button-component/assets/140426866/94634227-f753-4003-8b23-62de588568f3">
+<img width="48%" height="500px" alt="image" src="https://github.com/ingbinsee/button-component/assets/140426866/2497c924-0bde-430a-af16-3678c7bd4862">
+<img width="48%" height="500px" alt="image" src="https://github.com/ingbinsee/button-component/assets/140426866/94634227-f753-4003-8b23-62de588568f3">
 
 ### [배포 사이트 바로가기](https://createjujeob.netlify.app/)
 
@@ -161,20 +161,20 @@ export default Button;
 - 배경: bg-red-300 -> bg-[#FCCACA]
 - 글자: text-white -> text-black
 
-<img width="30%" height="800px" alt="image" src="https://github.com/ingbinsee/create-jujeob/assets/140426866/6682652d-cd07-4618-b929-b6c1a69d56f3">
-<img width="30%" height="800px" alt="image" src="https://github.com/ingbinsee/create-jujeob/assets/140426866/26562e6b-6369-4819-927e-880121daf163">
+<img width="48%" height="800px" alt="image" src="https://github.com/ingbinsee/create-jujeob/assets/140426866/6682652d-cd07-4618-b929-b6c1a69d56f3">
+<img width="48%" height="800px" alt="image" src="https://github.com/ingbinsee/create-jujeob/assets/140426866/26562e6b-6369-4819-927e-880121daf163">
 
 2. 생성 버튼 비활성화
 
 - 배경: bg-gray-300 -> bg-black
 
-<img width="30%" height="800px" alt="image" src="https://github.com/ingbinsee/create-jujeob/assets/140426866/1f396124-1903-4f38-97de-f79def3a0be0">
-<img width="30%" height="800px" alt="image" src="https://github.com/ingbinsee/create-jujeob/assets/140426866/7a859956-98f3-4dc7-8985-5f7c66a7b501">
+<img width="48%" height="800px" alt="image" src="https://github.com/ingbinsee/create-jujeob/assets/140426866/1f396124-1903-4f38-97de-f79def3a0be0">
+<img width="48%" height="800px" alt="image" src="https://github.com/ingbinsee/create-jujeob/assets/140426866/7a859956-98f3-4dc7-8985-5f7c66a7b501">
 
 2. 초기화 버튼
 
 - 배경: bg-red-500 -> bg-[#B10202]
 
 
-<img width="30%" height="800px" alt="image" src="https://github.com/ingbinsee/create-jujeob/assets/140426866/e09e60f0-50ad-4b0d-9455-26d260aeefaf">
-<img width="30%" height="800px" alt="image" src="https://github.com/ingbinsee/create-jujeob/assets/140426866/27b616fa-9476-4b9a-9bda-adc60fa2402f">
+<img width="48%" height="800px" alt="image" src="https://github.com/ingbinsee/create-jujeob/assets/140426866/e09e60f0-50ad-4b0d-9455-26d260aeefaf">
+<img width="48%" height="800px" alt="image" src="https://github.com/ingbinsee/create-jujeob/assets/140426866/27b616fa-9476-4b9a-9bda-adc60fa2402f">
