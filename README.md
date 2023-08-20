@@ -2,8 +2,8 @@
 
 ## 결과
 
-<img width="50%" height="500px" alt="image" src="https://github.com/ingbinsee/button-component/assets/140426866/2497c924-0bde-430a-af16-3678c7bd4862">
-<img width="50%" height="500px" alt="image" src="https://github.com/ingbinsee/button-component/assets/140426866/94634227-f753-4003-8b23-62de588568f3">
+<img width="48%" height="500px" alt="image" src="https://github.com/ingbinsee/button-component/assets/140426866/2497c924-0bde-430a-af16-3678c7bd4862">
+<img width="48%" height="500px" alt="image" src="https://github.com/ingbinsee/button-component/assets/140426866/94634227-f753-4003-8b23-62de588568f3">
 
 ## 활용
 
@@ -13,7 +13,7 @@
 
 React 컴포넌트를 구성한 후, 컴포넌트를 조립해 웹 사이트 랜딩 페이지를 구현하여 배포합니다. <br />
 
-### [사이트 바로가기](https://createjujeob.netlify.app/)
+### [배포 사이트 바로가기](https://createjujeob.netlify.app/)
 
 - [RootLayout.jsx 바로가기](https://github.com/ingbinsee/create-jujeob/blob/main/src/layout/RootLayout.jsx)
 - [CreateJujeob.jsx 바로가기](https://github.com/ingbinsee/create-jujeob/blob/main/src/layout/CreateJujeob.jsx)
