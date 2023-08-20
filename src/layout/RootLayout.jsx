@@ -24,7 +24,7 @@ function RootLayout() {
             aria-label="이름"
             value={inputName}
             placeholder="이름을 입력해 주세요."
-            className="grow border-solid border-2 border-sky-700 p-2 text-lg rounded-xl bg-sky-100 focus:border-4 read-only:bg-red-300 read-only:text-white disabled:border-red-700"
+            className="grow border-solid border-2 border-sky-700 p-2 text-lg rounded-xl bg-sky-100 focus:border-4 disabled:bg-[#FCCACA] disabled:border-red-700"
             onChange={(e) => {
               setInputName(e.target.value);
             }}
@@ -33,7 +33,7 @@ function RootLayout() {
             text="생성"
             type="button"
             disabled={disabled}
-            className="bg-blue-600 text-white px-3 rounded-md mx-3 h-11 text-lg focus:border-4 disabled:bg-gray-300"
+            className="bg-[#272AA5] text-white px-3 rounded-md mx-3 h-11 text-lg focus:border-4 disabled:bg-black"
             onClick={() => {
               inputName.length > 0
                 ? setIsVisiable(true)
@@ -44,7 +44,7 @@ function RootLayout() {
           <Button
             type="reset"
             text="초기화"
-            className="bg-red-500 text-white px-3 rounded-md h-11 text-lg focus:border-4"
+            className="bg-[#B10202] text-white px-3 rounded-md h-11 text-lg focus:border-4"
             onClick={() => {
               setInputName('');
               setIsVisiable(false);

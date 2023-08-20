@@ -2,8 +2,8 @@
 
 ## 결과
 
-<img width="48%" height="500px" alt="image" src="https://github.com/ingbinsee/button-component/assets/140426866/2497c924-0bde-430a-af16-3678c7bd4862">
-<img width="48%" height="500px" alt="image" src="https://github.com/ingbinsee/button-component/assets/140426866/94634227-f753-4003-8b23-62de588568f3">
+<img width="48%" height="800px" alt="image" src="https://github.com/ingbinsee/button-component/assets/140426866/2497c924-0bde-430a-af16-3678c7bd4862">
+<img width="48%" height="800px" alt="image" src="https://github.com/ingbinsee/button-component/assets/140426866/94634227-f753-4003-8b23-62de588568f3">
 
 ### [배포 사이트 바로가기](https://createjujeob.netlify.app/)
 
@@ -97,7 +97,7 @@ export default Button;
   aria-label="이름"
   value={inputName}
   placeholder="이름을 입력해 주세요."
-  className="grow border-solid border-2 border-sky-700 p-2 text-lg rounded-xl bg-sky-100 focus:border-4 read-only:bg-red-300 read-only:text-white disabled:border-red-700"
+  className="grow border-solid border-2 border-sky-700 p-2 text-lg rounded-xl bg-sky-100 focus:border-4 disabled:bg-[#FCCACA] disabled:border-red-700"
   onChange={(e) => {
     setInputName(e.target.value);
   }}
@@ -111,19 +111,18 @@ export default Button;
   text="생성"
   type="button"
   disabled={disabled}
-  className="bg-blue-600 text-white px-3 rounded-md mx-3 h-11 text-lg focus:border-4 disabled:bg-gray-300"
+  className="bg-[#272AA5] text-white px-3 rounded-md mx-3 h-11 text-lg focus:border-4 disabled:bg-black"
   onClick={() => {
     inputName.length > 0
-    ? setIsVisiable(true)
-    : alert('이름을 입력해 주세요.');
-    setDisabled(!disabled);
+      ? setIsVisiable(true)
+      : alert('이름을 입력해 주세요.');
+      setDisabled(!disabled);
   }}
 />
-
 <Button
   type="reset"
   text="초기화"
-  className="bg-red-500 text-white px-3 rounded-md h-11 text-lg focus:border-4"
+  className="bg-[#B10202] text-white px-3 rounded-md h-11 text-lg focus:border-4"
   onClick={() => {
     setInputName('');
     setIsVisiable(false);
@@ -152,3 +151,30 @@ export default Button;
 - useState, useId와 같이 React Hook을 다양하게 활용해볼 수 있었습니다.
 - 적절한 이벤트를 활용하여 컴포넌트를 효율적으로 조작할 수 있는 방법에 대해 익힐 수 있었습니다.
 - Debounce를 활용하여 inpur에 입력된 값이 실시간으로 적용되는 것이 아닌 입력 후 일정 시간에 도달했을 때 적용해보려 하였으나 구현하지 못하여 추후 이에 대한 리팩토링이 필요합니다.
+
+## 피드백
+
+- 비활성 또는 유효하지 않은 상태의 인풋 요소 접근성(명도 대비) 고려 -> <u>명도 대비 조건에 부합하도록 배경색과 글자색을 변경</u>
+
+1. 입력창 비활성화
+
+- 배경: bg-red-300 -> bg-[#FCCACA]
+- 글자: text-white -> text-black
+
+<img width="30%" height="800px" alt="image" src="https://github.com/ingbinsee/create-jujeob/assets/140426866/6682652d-cd07-4618-b929-b6c1a69d56f3">
+<img width="30%" height="800px" alt="image" src="https://github.com/ingbinsee/create-jujeob/assets/140426866/26562e6b-6369-4819-927e-880121daf163">
+
+2. 생성 버튼 비활성화
+
+- 배경: bg-gray-300 -> bg-black
+
+<img width="30%" height="800px" alt="image" src="https://github.com/ingbinsee/create-jujeob/assets/140426866/1f396124-1903-4f38-97de-f79def3a0be0">
+<img width="30%" height="800px" alt="image" src="https://github.com/ingbinsee/create-jujeob/assets/140426866/7a859956-98f3-4dc7-8985-5f7c66a7b501">
+
+2. 초기화 버튼
+
+- 배경: bg-red-500 -> bg-[#B10202]
+
+
+<img width="30%" height="800px" alt="image" src="https://github.com/ingbinsee/create-jujeob/assets/140426866/e09e60f0-50ad-4b0d-9455-26d260aeefaf">
+<img width="30%" height="800px" alt="image" src="https://github.com/ingbinsee/create-jujeob/assets/140426866/27b616fa-9476-4b9a-9bda-adc60fa2402f">
