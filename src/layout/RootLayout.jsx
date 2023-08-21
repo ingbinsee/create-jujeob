@@ -5,6 +5,7 @@ import Button from '@/components/Button';
 import CreateJejeob from './CreateJujeob';
 import Footer from './Footer';
 import {hanbleCopy} from '@/utils/copy';
+import { debounce } from '@/utils/debounce';
 
 const information = 'https://mk28.tistory.com/206';
 
@@ -22,12 +23,12 @@ function RootLayout() {
             type="text"
             disabled={disabled}
             aria-label="이름"
-            value={inputName}
+            defaultValue={inputName}
             placeholder="이름을 입력해 주세요."
             className="grow border-solid border-2 border-sky-700 p-2 text-lg rounded-xl bg-sky-100 focus:border-4 disabled:bg-[#FCCACA] disabled:border-red-700"
-            onChange={(e) => {
+            onChange={debounce((e) => {
               setInputName(e.target.value);
-            }}
+             })}
           />
           <Button
             text="생성"

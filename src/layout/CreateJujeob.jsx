@@ -1,3 +1,4 @@
+import Button from '@/components/Button';
 import {data} from '@/data/data';
 
 function CreateJejeob({className, name, spanClassName, ...restProps}) {
@@ -9,7 +10,7 @@ function CreateJejeob({className, name, spanClassName, ...restProps}) {
           `'${name}'`
         )}
       </output>
-      <span className={spanClassName}>복사하기</span>
+      <Button type="button" text="복사하기" className={spanClassName} />
     </div>
   );
 }

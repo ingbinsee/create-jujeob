@@ -154,9 +154,9 @@ export default Button;
 
 ## 피드백
 
-- 비활성 또는 유효하지 않은 상태의 인풋 요소 접근성(명도 대비) 고려 -> <u>명도 대비 조건에 부합하도록 배경색과 글자색을 변경</u>
+### 1. 비활성 또는 유효하지 않은 상태의 인풋 요소 접근성(명도 대비) 고려 -> <u>명도 대비 조건에 부합하도록 배경색과 글자색을 변경</u>
 
-1. 입력창 비활성화
+#### 1-1. 입력창 비활성화
 
 - 배경: bg-red-300 -> bg-[#FCCACA]
 - 글자: text-white -> text-black
@@ -164,17 +164,58 @@ export default Button;
 <img width="48%" height="800px" alt="image" src="https://github.com/ingbinsee/create-jujeob/assets/140426866/6682652d-cd07-4618-b929-b6c1a69d56f3">
 <img width="48%" height="800px" alt="image" src="https://github.com/ingbinsee/create-jujeob/assets/140426866/26562e6b-6369-4819-927e-880121daf163">
 
-2. 생성 버튼 비활성화
+#### 1-2. 생성 버튼 비활성화
 
 - 배경: bg-gray-300 -> bg-black
 
 <img width="48%" height="800px" alt="image" src="https://github.com/ingbinsee/create-jujeob/assets/140426866/1f396124-1903-4f38-97de-f79def3a0be0">
 <img width="48%" height="800px" alt="image" src="https://github.com/ingbinsee/create-jujeob/assets/140426866/7a859956-98f3-4dc7-8985-5f7c66a7b501">
 
-2. 초기화 버튼
+#### 1-3. 초기화 버튼
 
 - 배경: bg-red-500 -> bg-[#B10202]
 
-
 <img width="48%" height="800px" alt="image" src="https://github.com/ingbinsee/create-jujeob/assets/140426866/e09e60f0-50ad-4b0d-9455-26d260aeefaf">
 <img width="48%" height="800px" alt="image" src="https://github.com/ingbinsee/create-jujeob/assets/140426866/27b616fa-9476-4b9a-9bda-adc60fa2402f">
+
+### 2. 복사하기 버튼 접근성 고려 -> <u>span에서 button으로 마크업 변경</u>
+
+#### 기존
+
+```jsx
+<span className={spanClassName}>복사하기</span>
+```
+
+#### 변경
+
+```jsx
+<Button type="button" text="복사하기" className={spanClassName} />
+```
+
+<img width="48%" height="800px" alt="image" src="https://github.com/ingbinsee/create-jujeob/assets/140426866/94a2fbb6-5ee4-4e49-9b49-6eed92ddaa6e">
+
+### 3. 텍스트 입력 시 실시간 렌더링으로 인한 성능 이슈 -> <u>Debounce를 활용하여 입력 시 실시간 렌더링 되는 문제 개선</u>
+
+#### 3-1. prop 변경
+
+- value -> defaultValue
+
+#### 3-2. debounce 함수 추가
+
+```js
+export function debounce(callback, timeout = 300) {
+  let cleanup = null;
+  return (e) => {
+    clearTimeout(cleanup);
+    cleanup = setTimeout(callback.bind(null, e), timeout);
+  };
+}
+```
+
+#### 3-3. Input에서 debounce 함수 연결
+
+```jsx
+onChange={debounce((e) => {
+  setInputName(e.target.value);
+})}
+```
