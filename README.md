@@ -192,7 +192,7 @@ export default Button;
 <Button type="button" text="복사하기" className={spanClassName} />
 ```
 
-<img width="60%" height="800px" alt="image" src="https://github.com/ingbinsee/create-jujeob/assets/140426866/94a2fbb6-5ee4-4e49-9b49-6eed92ddaa6e">
+<img height="800px" alt="image" src="https://github.com/ingbinsee/create-jujeob/assets/140426866/94a2fbb6-5ee4-4e49-9b49-6eed92ddaa6e">
 
 ### 3. 텍스트 입력 시 실시간 렌더링으로 인한 성능 이슈 -> <u>Debounce를 활용하여 입력 시 실시간 렌더링 되는 문제 개선</u>
 
