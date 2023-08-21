@@ -2,7 +2,7 @@ function copy(text) {
   return navigator.clipboard.writeText(text);
 }
 
-export function hanbleCopy(node) {
+export function handleCopy(node) {
   const text = document.querySelector(node).textContent;
   console.log();
   copy(text).then(() => {
